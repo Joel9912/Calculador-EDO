@@ -1,0 +1,15 @@
+# mkdocs.yml
+
+site_name: EDOS Euler, RK2, RK4
+
+nav:
+    - Inicio: index.md
+    - Calculador EDO: calcEDO.md
+    - Explicación: explicacion.md
+    - Guías: guias.md
+    - Referencias: referencias.md
+    - Tutoriales: tutoriales.md
+
+theme:
+  name: "readthedocs"
+  locale: es
