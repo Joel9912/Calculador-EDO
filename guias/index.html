@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Guías - EDOS Euler, RK2, RK4</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Gu\u00edas";
+        var mkdocs_page_input_path = "guias.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> EDOS Euler, RK2, RK4
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" title="Escriba el término de búsqueda aquí" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegación">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Inicio</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../calcEDO/">Calculador EDO</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../explicacion/">Explicación</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Guías</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#introduccion">Introducción</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#requisitos">Requisitos</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#instrucciones">Instrucciones</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ejemplo">Ejemplo</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../referencias/">Referencias</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../tutoriales/">Tutoriales</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menú de navegación en móvil">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">EDOS Euler, RK2, RK4</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Documentos"></a></li>
+      <li class="breadcrumb-item active">Guías</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="guia-de-uso-del-calculador-de-ecuaciones-diferenciales">Guía de uso del calculador de ecuaciones diferenciales</h1>
+<h2 id="introduccion">Introducción</h2>
+<p>El calculador de ecuaciones diferenciales es una herramienta poderosa para resolver ecuaciones diferenciales ordinarias (EDO) de primera orden. En esta guía, te explicaremos cómo utilizar esta herramienta para resolver ecuaciones diferenciales con condiciones iniciales y finales.</p>
+<h2 id="requisitos">Requisitos</h2>
+<p>Para utilizar el calculador de ecuaciones diferenciales, necesitarás proporcionar la siguiente información:</p>
+<p>Ecuación diferencial: La ecuación diferencial que deseas resolver. Debe ser una ecuación de la forma dy/dx = f(x, y).
+Condición inicial: El punto (x0, y0) que representa la condición inicial de la ecuación diferencial.
+Punto final: El punto xf que representa el punto final hasta el cual deseas resolver la ecuación diferencial.
+Cantidad de iteraciones: El número n de iteraciones que deseas utilizar para resolver la ecuación diferencial.</p>
+<h2 id="instrucciones">Instrucciones</h2>
+<p>Sigue estos pasos para utilizar el calculador de ecuaciones diferenciales:</p>
+<p>Paso 1: Proporciona la ecuación diferencial</p>
+<p>Escribe la ecuación diferencial que deseas resolver en la forma dy/dx = f(x, y). Por ejemplo, si deseas resolver la ecuación dy/dx = x + y, escribe x + y en el campo de entrada correspondiente.</p>
+<p>Paso 2: Proporciona la condición inicial</p>
+<p>Escribe el punto (x0, y0) que representa la condición inicial de la ecuación diferencial. Por ejemplo, si la condición inicial es x0 = 0 y y0 = 1, escribe 0, 1 en el campo de entrada correspondiente.</p>
+<p>Paso 3: Proporciona el punto final</p>
+<p>Escribe el punto xf que representa el punto final hasta el cual deseas resolver la ecuación diferencial. Por ejemplo, si deseas resolver la ecuación hasta x = 10, escribe 10 en el campo de entrada correspondiente.</p>
+<p>Paso 4: Proporciona la cantidad de iteraciones</p>
+<p>Escribe el número n de iteraciones que deseas utilizar para resolver la ecuación diferencial. Por ejemplo, si deseas utilizar 100 iteraciones, escribe 100 en el campo de entrada correspondiente.</p>
+<p>Paso 5: Ejecuta el cálculo</p>
+<p>Una vez que hayas proporcionado toda la información, haz clic en el botón "Calcular" para ejecutar el cálculo. El calculador de ecuaciones diferenciales utilizará el método de Euler o el método de Runge-Kutta para resolver la ecuación diferencial y mostrará los resultados en una tabla o gráfica.</p>
+<h2 id="ejemplo">Ejemplo</h2>
+<p>Supongamos que deseas resolver la ecuación diferencial dy/dx = x + y con la condición inicial (0, 1) y hasta el punto final x = 10. Deseas utilizar 100 iteraciones.</p>
+<p>Entrada:</p>
+<p>Ecuación diferencial: x + y</p>
+<p>Condición inicial: 0, 1</p>
+<p>Punto final: 10</p>
+<p>Cantidad de iteraciones: 100</p>
+<p>Salida</p>
+<p>El calculador de ecuaciones diferenciales mostrará los resultados en una tabla o gráfica que muestra la solución de la ecuación diferencial en función de x.</p>
+<p>Recuerda que la precisión de los resultados depende de la cantidad de iteraciones y del método de resolución utilizado. Asegúrate de ajustar los parámetros según sea necesario para obtener resultados precisos.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navegación de pie de página">
+        <a href="../explicacion/" class="btn btn-neutral float-left" title="Explicación"><span class="icon icon-circle-arrow-left"></span> Anterior</a>
+        <a href="../referencias/" class="btn btn-neutral float-right" title="Referencias">Siguiente <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Construído con <a href="https://www.mkdocs.org/">MkDocs</a> usando un <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a> provisto por <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versiones">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../explicacion/" style="color: #fcfcfc">&laquo; Anterior</a></span>
+    
+    
+      <span><a href="../referencias/" style="color: #fcfcfc">Siguiente &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

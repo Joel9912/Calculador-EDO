@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Explicación - EDOS Euler, RK2, RK4</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Explicaci\u00f3n";
+        var mkdocs_page_input_path = "explicacion.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> EDOS Euler, RK2, RK4
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" title="Escriba el término de búsqueda aquí" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegación">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Inicio</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../calcEDO/">Calculador EDO</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Explicación</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#estructura-general-de-una-edo">Estructura general de una EDO</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#metodos-para-resolver-edo">Métodos para resolver EDO</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#aplicaciones-de-las-edo">Aplicaciones de las EDO</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../guias/">Guías</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../referencias/">Referencias</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../tutoriales/">Tutoriales</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menú de navegación en móvil">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">EDOS Euler, RK2, RK4</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Documentos"></a></li>
+      <li class="breadcrumb-item active">Explicación</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="que-son-las-ecuaciones-diferenciales-ordinarias">¿Qué son las ecuaciones diferenciales ordinarias?</h1>
+<p>Las ecuaciones diferenciales ordinarias (EDO) son una clase de ecuaciones matemáticas que describen la relación entre una función desconocida y sus derivadas. Estas ecuaciones se utilizan para modelar una amplia variedad de fenómenos naturales y procesos dinámicos en campos como la física, la biología, la economía y la ingeniería.</p>
+<h2 id="estructura-general-de-una-edo">Estructura general de una EDO</h2>
+<p>Una EDO tiene la siguiente estructura general:</p>
+<p>dy/dx = f(x, y)</p>
+<p>Donde:</p>
+<p>y es la función desconocida que se busca encontrar
+x es la variable independiente
+f(x, y) es una función que describe la relación entre y y x
+dy/dx es la derivada de y con respecto a x
+Tipos de EDO</p>
+<p>Existen varios tipos de EDO, algunos de los más comunes son:</p>
+<p>EDO de primer orden: son ecuaciones que involucran solo la primera derivada de la función desconocida.
+dy/dx = f(x, y)</p>
+<p>EDO de orden superior: son ecuaciones que involucran derivadas de orden superior (segunda, tercera, etc.) de la función desconocida.
+d^2y/dx^2 = f(x, y, dy/dx)</p>
+<h2 id="metodos-para-resolver-edo">Métodos para resolver EDO</h2>
+<p>Existen varios métodos para resolver EDO, los que vamos a ver son:</p>
+<p>Método de Euler, Método de Runge-Kutta de Segundo y Cuarto Órden</p>
+<h2 id="aplicaciones-de-las-edo">Aplicaciones de las EDO</h2>
+<p>Las EDO tienen una amplia variedad de aplicaciones en diferentes campos, algunos ejemplos son:</p>
+<p>Física: se utilizan para modelar el movimiento de objetos, la propagación de ondas y la dinámica de sistemas.
+Biología: se utilizan para modelar la crecimiento de poblaciones, la propagación de enfermedades y la dinámica de sistemas biológicos.
+Economía: se utilizan para modelar la crecimiento económico, la inflación y la dinámica de sistemas económicos.
+Ingeniería: se utilizan para modelar la dinámica de sistemas mecánicos, eléctricos y electrónicos.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navegación de pie de página">
+        <a href="../calcEDO/" class="btn btn-neutral float-left" title="Calculador EDO"><span class="icon icon-circle-arrow-left"></span> Anterior</a>
+        <a href="../guias/" class="btn btn-neutral float-right" title="Guías">Siguiente <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Construído con <a href="https://www.mkdocs.org/">MkDocs</a> usando un <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a> provisto por <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versiones">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../calcEDO/" style="color: #fcfcfc">&laquo; Anterior</a></span>
+    
+    
+      <span><a href="../guias/" style="color: #fcfcfc">Siguiente &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
